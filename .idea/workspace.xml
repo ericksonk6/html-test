@@ -9,9 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c544967-f449-4d09-b793-6596b16c8940" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0c544967-f449-4d09-b793-6596b16c8940" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600715236012</updated>
-      <workItem from="1600715237087" duration="1229000" />
+      <workItem from="1600715237087" duration="1584000" />
     </task>
     <servers />
   </component>
@@ -72,9 +70,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="169" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1600716239161">
+    <state x="169" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1600716999678">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state x="169" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1600716239161" />
+    <state x="169" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1600716999678" />
   </component>
 </project>
