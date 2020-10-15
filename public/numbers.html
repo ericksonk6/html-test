@@ -2,10 +2,281 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>numbers</title>
 </head>
-<body>
-<a href="https://ancient-coast-58080.herokuapp.com/main.html">back to main</a>
+<style>
 
+    #container {
+        border: 2px dashed #444;
+        height: 125px;
+
+        text-align: justify;
+        -ms-text-justify: distribute-all-lines;
+        text-justify: distribute-all-lines;
+
+        /* just for demo */
+        min-width: 612px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 150px;
+        height: 125px;
+        vertical-align: top;
+        display: inline-block;
+        *display: inline;
+        zoom: 1
+    }
+    .stretch {
+        width: 100%;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0
+    }
+
+    .box1, .box3 {
+        background: #ccc
+    }
+    .box2, .box4 {
+        background: #0ff
+    }
+
+    #grid-container {
+        width: 300px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px 5px;
+    }
+
+    span.yellowBackground{
+        background-color: lightgoldenrodyellow;
+
+    }
+    span.orangeBackground{
+        background-color: #d08477;
+    }
+
+    #container-border {
+        border-width: 2px;
+        border-color: red;
+        border-style: dashed;
+    }
+
+    table.TheTable {
+                               width:60%;
+                               background-color:#FFFFFF;
+                               border-collapse:collapse;border-width:1px;
+                               border-color:#000000;
+                               border-style:solid;
+                               color:#000000;
+                           }
+
+    table.TheTable td, table.TheTable th {
+        border-width:1px;
+        border-color:#000000;
+        border-style:solid;
+    }
+
+    table.TheTable thead {
+        background-color:black;
+        color: white;
+    }
+    table.TheTable tfoot {
+        background-color:green;
+    }
+
+    div.outline{
+        border: 20px solid darkseagreen; /* Set the border width and style */
+        outline: 2px solid black; /* Set the outline width and style */
+        margin: 5px;
+        width: 780px;
+    }
+
+</style>
+<body>
+<blockquote>
+    Welcome to my Page of Numbers
+
+    <div id="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+<p>
+
+<table class="TheTable">
+    <thead>
+    <tr>
+        <th>n</th>
+        <th>n2</th>
+        <th>n3</th>
+        <th>n!</th>
+        <th>2n</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>9</td>
+        <td>27</td>
+        <td>6</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>16</td>
+        <td>64</td>
+        <td>24</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>25</td>
+        <td>125</td>
+        <td>120</td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>36</td>
+        <td>216</td>
+        <td>720</td>
+        <td>64</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>49</td>
+        <td>343</td>
+        <td>5040</td>
+        <td>128</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>64</td>
+        <td>512</td>
+        <td>40320</td>
+        <td>256</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>81</td>
+        <td>729</td>
+        <td>362880</td>
+        <td>512</td>
+    </tr>
+
+    <tr>
+        <td>10</td>
+        <td>100</td>
+        <td>1000</td>
+        <td>3628800</td>
+        <td>1024</td>
+    </tr>
+
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>Lineal</td>
+        <td>Quadratic</td>
+        <td>Cube</td>
+        <td>Factorial</td>
+        <td>Exponential</td>
+    </tr>
+    </tfoot>
+
+</table>
+
+
+
+<p>
+    <div class="outline">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+    </p>
+    <p>
+    <h2>Border inside Rectangular and Circular Shape</h2>
+    <div class="box circle inner-border"></div>
+    <div class="box inner-border"></div>
+    <hr>
+    <h2>Outline Inside Rectangular Shape</h2>
+    <div class="box inner-outline"></div>
+    </p>
+
+    <p>
+    Linear
+    <img src="Linear.png" width="100" height="100" >
+</p>
+<p>
+    Quadratic
+    <img src="Quadratic.png" width="100" height="100" >
+
+</p>
+<p>
+    Cubic
+    <img src="Cubic.png" width="100" height="100" >
+
+</p>
+<p>
+    Factorial
+    <img src="Factorial.png" width="100" height="100" >
+
+</p>
+<p>
+    Exponential
+    <img src="Exponential.png" width="100" height="100" >
+
+</p>
+
+<div id="grid-container">
+    <div id="grid-item-a"> <span class="yellowBackground" >d5</span></div>
+    <div id="grid-item-b"><span class="orangeBackground" >d4</span></div>
+    <div id="grid-item-c"><span class="orangeBackground" >d4</span></div>
+</div>
+
+<div>
+    <table class="lastW">
+        <th>
+            <tr>
+                <span class="yellowBackground" >d5</span>
+            </tr>
+           <tr>
+               <span class="orangeBackground" >d4</span>
+           </tr>
+            <tr>
+                c
+            </tr>
+        </th>
+    </table>
+</div>
+
+<p><a href="main.html">back to main</a></p>
+</blockquote>
 </body>
 </html>
