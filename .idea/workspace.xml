@@ -9,17 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c544967-f449-4d09-b793-6596b16c8940" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/gameInJS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/main example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mainexample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scratch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scratch2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scratch3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="0c544967-f449-4d09-b793-6596b16c8940" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +76,7 @@
       <workItem from="1603145786659" duration="4709000" />
       <workItem from="1603417674251" duration="7598000" />
       <workItem from="1604036474353" duration="3558000" />
-      <workItem from="1604279106342" duration="11784000" />
+      <workItem from="1604279106342" duration="12092000" />
     </task>
     <task id="LOCAL-00001" summary="edit">
       <created>1601331945131</created>
@@ -158,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602829574118</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit1">
+      <created>1604302395478</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604302395478</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,19 +165,20 @@
     <MESSAGE value="edit" />
     <MESSAGE value="final edit" />
     <MESSAGE value="links" />
-    <option name="LAST_COMMIT_MESSAGE" value="links" />
+    <MESSAGE value="commit1" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="875" y="129" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602813306257">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="875" y="129" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.833@0.23.1440.833" timestamp="1602813306257" />
-    <state x="169" y="23" width="846" height="834" key="CommitChangelistDialog2" timestamp="1602829573841">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="169" y="23" width="846" height="834" key="CommitChangelistDialog2" timestamp="1604302395260">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state x="169" y="23" width="846" height="830" key="CommitChangelistDialog2/0.23.1440.830@0.23.1440.830" timestamp="1602724473173" />
     <state x="169" y="23" key="CommitChangelistDialog2/0.23.1440.831@0.23.1440.831" timestamp="1601667840181" />
-    <state x="169" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1602797819808" />
+    <state x="169" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1604302395260" />
     <state x="169" y="23" width="846" height="833" key="CommitChangelistDialog2/0.23.1440.833@0.23.1440.833" timestamp="1601783214005" />
     <state x="169" y="23" width="846" height="834" key="CommitChangelistDialog2/0.23.1440.834@0.23.1440.834" timestamp="1602829573841" />
     <state x="169" y="23" width="846" height="837" key="CommitChangelistDialog2/0.23.1440.837@0.23.1440.837" timestamp="1601332182116" />
