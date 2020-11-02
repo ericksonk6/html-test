@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculations</title>
+    <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+    <script>
+        function DrawTable(){
+            let start = parseInt(document.getElementById("txtStart").value);
+            let end = parseInt(document.getElementById("txtEnd").value);
+
+            let output = document.getElementById("outputTable");
+            let table = "";
+            table =
+                "<table class=\"table table-dark\">" +
+                "   <thead>" +
+                "       <tr>" +
+                "           <th scope=\"col\">n</th>" +
+                "           <th scope=\"col\">n<sup>2</sup></th>" +
+                "           <th scope=\"col\">n<sup>3</sup></th>" +
+                "           <th scope=\"col\">n<sup>2</sup>+n</th>" +
+                "       </tr>" +
+                "   </thead>" +
+                "   <tbody>";
+            for (let i=start; i<=end; i++){
+                table += (
+                    "   <tr>" +
+                    "       <th scope=\"row\">" + i + "</th>" +
+                    "       <td>" + (i*i) + "</td>" +
+                    "       <td>" + (i*i*i) + "</td>" +
+                    "       <td>" + (i*i+(i)) + "</td>" +
+                    "   </tr>");
+            }
+            table += (
+                "   </tbody>" +
+                "</table>");
+            output.innerHTML = table;
+        }
+        function primeNumber(){
+            let number = parseInt(document.getElementById("prime").value);
+            let isPrime = false;
+            let output = document.getElementById("outputanswer");
+            let num = number;
+            if (num <= 1){
+                output.innerHTML = "No it is prime";
+                return false;}
+            if (num % 2 == 0 && num > 2){
+                output.innerHTML = "No it is prime";
+                return false; }
+            let s = Math.sqrt(num);
+            for(let i = 3; i <= s; i++) {
+                if(num % i === 0) {
+                    output.innerHTML = "No it is prime";
+                    return false;}
+            }
+            output.innerHTML = "Yes it is prime";
+            return true;
+
+
+
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/pages/">Pages</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/pages/calculations.html">Forms and JS <span
+                        class="sr-only">
+                    (current)</span> </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <h2>Creating a Table</h2>
+    <p>We are going to fill up a table with data using the information provided in the
+        controls below.</p>
+    <div class="form-group">
+        <label for="txtStart">Start</label>
+        <input type="number" name="txtStart" id="txtStart" class="form-control"
+               placeholder="Start Number">
+    </div>
+    <div class="form-group">
+        <label for="txtEnd">End</label>
+        <input type="number" name="txtEnd" id="txtEnd" class="form-control"
+               placeholder="End Number">
+    </div>
+    <button type="submit" id="createTable" class="btn btn-primary">Create Table</button>
+</div>
+<br>
+<hr>
+<div class="container" id="outputTable">
+
+</div>
+<script>
+    document.getElementById("createTable").addEventListener("click", DrawTable);
+</script>
+
+<div class="container">
+    <div class="form-group">
+        <label for="prime">Input number</label>
+        <input type="number" name="prime" id="prime" class="form-control"
+               placeholder="Enter number">
+    </div>
+    <button type="submit" id="createanswer" class="btn btn-primary">Is it Prime?</button>
+</div>
+
+<div class="container" id="outputanswer">
+
+</div>
+<script>
+    document.getElementById("createanswer").addEventListener("click", primeNumber);
+</script>
+</body>
+</html>

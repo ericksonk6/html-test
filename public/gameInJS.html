@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Guessing Game</title>
+    <script>
+
+        let randNum;
+        let tries = 5;
+        function RandomNumber() {
+            const min = parseInt(document.getElementById("startNum").value);
+            const max = parseInt(document.getElementById("endNum").value);
+            if(min >= max)
+                alert("Start number must be smaller than end number.");
+            else{
+                randNum = Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        }
+
+        function GuessingGame() {
+            let guess = parseInt(document.getElementById("guess").value);
+            let output = document.getElementById("output");
+
+            tries = tries - 1;
+    if (guess === randNum) {
+        alert("correct! Nice Job!");
+        return;
+    }
+    if (guess > randNum) {
+        if(tries === 1){
+            alert("your guess " + guess + " is too high, "  + tries + " try left");
+        }
+        else {
+            alert("your guess " + guess + " is too high, " + tries + " tries left");
+        }
+    }
+    if (guess < randNum) {
+        if(tries === 1){
+            alert("your guess " + guess + " is too low, "  + tries + " try left");
+        }
+        else {
+            alert("your guess " + guess + " is too low, " + tries + " tries left");
+        }
+    }
+
+if(guess !== randNum && tries === 0){
+    alert("You lost :( the number was " + randNum + ". Press the refresh button to play again!");
+}
+
+
+        }
+        </script>
+    </head>
+
+<div class="container">
+    <h2>Guess the number</h2>
+    <!--start number-->
+    <div class="form-group">
+        <label for="startNum">Input start</label>
+        <input type="number" name="startNum" id="startNum" class="form-control"
+               placeholder="Start number">
+    </div>
+
+    <!--end number-->
+    <div class="form-group">
+        <label for="endNum">Input end</label>
+        <input type="number" name="endNum" id="endNum" class="form-control"
+               placeholder="End number">
+    </div>
+
+    <button type="submit" id="create" class="btn btn-primary">Random Number</button>
+</div>
+
+<script>
+    document.getElementById("create").addEventListener("click", RandomNumber);
+</script>
+
+<div class="container">
+    <!--guess number-->
+    <div class="form-group">
+        <label for="guess">Input guess</label>
+        <input type="number" name="guess" id="guess" class="form-control"
+               placeholder="Enter guess">
+    </div>
+
+    <button type="submit" id="answer" class="btn btn-primary">Did you guess it right?</button>
+</div>
+
+<div class="container" id="output">
+
+</div>
+<script>
+    document.getElementById("answer").addEventListener("click", GuessingGame);
+</script>
+
+
+<p></p>
+<div class="container">
+    <div>
+        <button class="btn btn-primary" onClick="window.location.reload();">Refresh Page</button>
+    </div>
+
+</div>
+
+
+<!-- jQuery, Popper.js, and Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
