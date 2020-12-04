@@ -23,6 +23,7 @@
 
         let randNum;
         let tries = 5;
+
         function RandomNumber() {
             const min = parseInt(document.getElementById("startNum").value);
             const max = parseInt(document.getElementById("endNum").value);
@@ -35,7 +36,6 @@
 
         function GuessingGame() {
             let guess = parseInt(document.getElementById("guess").value);
-            let output = document.getElementById("output");
 
             tries = tries - 1;
     if (guess === randNum) {
